@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Calculadora simples em javaScript </h1>
+
+<div>
+ <label for="valora">Valor A:</label>
+ <input type="number" id="valora">
+</div>
+
+<div>
+ <label for="valorb">Valor B:</label>
+ <input type="number" id="valorb">
+</div>
+
+<div>
+    <button type="button" onclick="somar()">Somar</button>
+</div>
+
+<div>
+    <p id="resultado">resultado</p>
+</div>
+
+<script>
+
+function somar(){
+ var valora = document.getElementById("valora").value;
+ var valorb = document.getElementById("valorb").value;
+ var A = parseInt(valora);
+ var B = parseInt(valorb);
+ var soma = A + B;
+ document.getElementById("resultado").innerText = "resultado:" + soma;
+}    
+</script>
+
+</body>
+</html>
